@@ -1,10 +1,14 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
+
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { ProdutoModule } from './produto/produto.module';
 
 @Module({
-  imports: [],
+  imports: [ProdutoModule],
+
   controllers: [AppController],
-  providers: [AppService],
+  providers: [],
 })
 export class AppModule {}
