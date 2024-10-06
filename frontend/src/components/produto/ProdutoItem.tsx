@@ -13,6 +13,8 @@ export default function ProdutoItem(props: ProdutoItemProps) {
  
  
     return (
+
+     
         <Link
         href={`/produto/${produto.id}`}
         className="flex flex-col bg-violet-dark border border-white/10 rounded-xl relative max-w-[350px]"
@@ -59,5 +61,6 @@ export default function ProdutoItem(props: ProdutoItemProps) {
             </button>
         </div>
     </Link>
+
   )
 }
