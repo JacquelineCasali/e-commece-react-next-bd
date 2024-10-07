@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import Especificacoes from './Especificacoes'
 import Precificavel from './Precificavel'
 

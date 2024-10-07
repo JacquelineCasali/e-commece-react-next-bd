@@ -6,9 +6,13 @@ Esse projeto é o desenvolvimento de um Front-End  com Next e Back end com Nest
 Desenvolvido na semana do dev da Formação Dev 
 
 # Imagem do projeto
-
+Tela Inicial
 <img src="./frontend/public/telaInicial.png">
 
+Tela de detalhe do produto
+
+<img src="./frontend/public/2024-10-07_162200.png">
+<img src="./frontend/public/2024-10-07_162214.png">
 # site do projeto
 
 <!--  Em breve -->

@@ -1,3 +1,2 @@
-/* eslint-disable prettier/prettier */
-import produtos from './produtos';
-export { produtos };
+import produtos from './produtos'
+export { produtos }

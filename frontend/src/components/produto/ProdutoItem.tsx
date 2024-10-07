@@ -1,5 +1,6 @@
 'use client'
 import { Produto } from '@/core'
+import { Moeda } from '@/core/utils'
 import { IconShoppingCartPlus } from '@tabler/icons-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -40,10 +41,14 @@ export default function ProdutoItem(props: ProdutoItemProps) {
             <div className="flex-1"></div>
             <div className="flex flex-col">
                 <span className="text-sm text-gray-400 line-through ">
-                    de R$ {props.produto.precoBase}
+                    de 
+                    {Moeda.formatar(props.produto.precoBase)}
+                   
                 </span>
                 <span className="text-xl font-semibold text-emerald-400">
-                    por R$ {props.produto.precoPromocional}
+                    por  {Moeda.formatar(props.produto.precoPromocional)}
+                              
+                    
                 </span>
             </div>
             <button
