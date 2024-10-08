@@ -11,7 +11,7 @@ export default function IconeCarrinho(props:IconeCarrinhoProps) {
       <div className="flex items-center justify-center absolute top-2
       right-2 w-5 h-5 bg-pink-500 text-white text-xs font-semibold rounded-full
       ">
-{props.qtdeItens??0}
+{props.qtdeItens ?? 0}
       </div>
     </div>
   )

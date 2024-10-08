@@ -27,17 +27,45 @@ model Produto {
   precoMedio       Float
 
   especificacoes Json
-
+  
+  itens ItemPedido[]
   //nome da tabela 
   @@map("produtos")
 }
 
-model Usuario {
-  id    Int    @id @default(autoincrement())
-  nome  String
-  email String
-  senha String
+model Pedido {
+  id             Int      @id @default(autoincrement())
+  data           DateTime
+  valorTotal     Float
+  status         String
+  formaPagamento String
 
-  @@map("usuarios")
+  entrega   PedidoEntrega @relation(fields: [entregaId], references: [id])
+  entregaId Int           @unique
+
+  itens ItemPedido[]
 }
 
+model ItemPedido {
+  id            Int   @id @default(autoincrement())
+  quantidade    Int
+  precoUnitario Float
+
+  pedido   Pedido @relation(fields: [pedidoId], references: [id])
+  pedidoId Int
+
+  produto   Produto @relation(fields: [produtoId], references: [id])
+  produtoId Int
+}
+model PedidoEntrega {
+  id          Int    @id @default(autoincrement())
+  nome        String
+  email       String
+  cpf         String
+  logradouro  String
+  complemento String
+  cidade      String
+  estado      String
+
+  pedido Pedido?
+}

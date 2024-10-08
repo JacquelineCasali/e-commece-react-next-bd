@@ -18,7 +18,7 @@ export default function Pagina(props:PaginaProps) {
             >
                  <Hearder />
       <main className={`flex-1 flex flex-col py-6 container
-      ${props.className??''}
+      ${props.className ?? ''}
       `}
       
       >{props.children}</main>

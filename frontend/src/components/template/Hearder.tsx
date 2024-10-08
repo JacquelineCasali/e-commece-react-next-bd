@@ -4,7 +4,9 @@ import Link from 'next/link'
 import IconeCarrinho from '../shared/IconeCarrinho'
 
 export default function Hearder() {
-  return (
+  
+    const qtdeItens = 0
+    return (
     <div className='flex flex-col h-20 sticky top-0 z-50'
     style={{
         background: 'linear-gradient(90deg, #14002D 0%, #420093 50%, #14002D 100%)',
@@ -12,8 +14,8 @@ export default function Hearder() {
        <div className="flex-1 container flex flex-col justify-center">
                 <div className="flex justify-between items-center">
                     <Logo />
-                    <Link href="">
-                        <IconeCarrinho qtdeItens={0} />
+                    <Link href="/checkout/carrinho">
+                        <IconeCarrinho qtdeItens={qtdeItens} />
                     </Link>
                 </div>
             </div>

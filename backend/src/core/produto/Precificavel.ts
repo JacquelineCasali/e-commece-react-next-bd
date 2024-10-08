@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export default interface Precificavel {
     precoBase: number
     precoPromocional: number
