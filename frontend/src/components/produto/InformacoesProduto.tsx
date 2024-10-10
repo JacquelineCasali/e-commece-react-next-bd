@@ -20,7 +20,7 @@ export default function InformacoesProduto(props:InformacoesProdutoProps) {
                     alt="Imagem do Produto"
                 />
             </div>
-            <Especificacoes produto={produto} />
+            <Especificacoes produto={produto!} />
       
        </div>
   )

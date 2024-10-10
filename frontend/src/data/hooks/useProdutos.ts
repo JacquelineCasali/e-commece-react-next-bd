@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 const urlBase='http://localhost:3005'
 export default function useProdutos() {
  // chamando a api
+
+
  const [produtos,setProdutos]=useState<Produto[]>([])
  async function obterProdutos():Promise<Produto[]>{
    const resp=await fetch(`${urlBase}/produtos`)
@@ -21,10 +23,12 @@ async function obterProdutoPorId(id:number): Promise<Produto | null>{
 
  useEffect(()=>{
   obterProdutos().then(setProdutos)
+  //corventendo para miniscula
  },[])
   return {
     produtos,
     obterProdutoPorId,
+ 
   }
 
   

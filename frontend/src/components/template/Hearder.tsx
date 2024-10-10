@@ -1,11 +1,12 @@
-import React from 'react'
+
+'use client'
 import Logo from '../shared/Logo'
 import Link from 'next/link'
 import IconeCarrinho from '../shared/IconeCarrinho'
+import useCarrinho from '@/data/hooks/useCarrinho'
 
 export default function Hearder() {
-  
-    const qtdeItens = 0
+      const {qtdeItens} = useCarrinho()
     return (
     <div className='flex flex-col h-20 sticky top-0 z-50'
     style={{

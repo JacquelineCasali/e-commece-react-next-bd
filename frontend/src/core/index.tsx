@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+
 export * from './carrinho'
 export * from './constants'
 export * from './parcelamento'
