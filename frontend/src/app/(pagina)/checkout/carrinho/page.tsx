@@ -1,5 +1,5 @@
 'use client'
-import CabecalhoCheckout from '@/components/checkout/carrinho/CabecalhoCheckout'
+import CabecalhoCheckout from '@/components/checkout/CabecalhoCheckout'
 import CarrinhoItem from '@/components/checkout/carrinho/CarrinhoItem'
 import CarrinhoVazio from '@/components/checkout/carrinho/CarrinhoVazio'
 import TotalCarrinho from '@/components/checkout/carrinho/TotalCarrinho'
